@@ -35,12 +35,8 @@
           "color"
         ],
         "fill-extrusion-height": [
-          "+",
-          [
-            "get",
-            "height"
-          ],
-          1
+          "get",
+          "height"
         ]
       },
       "source": "p",
