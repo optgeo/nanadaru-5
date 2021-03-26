@@ -1,0 +1,84 @@
+{
+  "center": [
+    138.938841,
+    34.791407
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "paint": {
+        "sky-type": "atmosphere"
+      },
+      "type": "sky"
+    },
+    {
+      "id": "background",
+      "paint": {
+        "background-color": [
+          "rgb",
+          20,
+          20,
+          20
+        ]
+      },
+      "type": "background"
+    },
+    {
+      "id": "asprs1",
+      "paint": {
+        "fill-extrusion-base": [
+          "get",
+          "height"
+        ],
+        "fill-extrusion-color": [
+          "get",
+          "color"
+        ],
+        "fill-extrusion-height": [
+          "+",
+          [
+            "get",
+            "height"
+          ],
+          1
+        ]
+      },
+      "source": "p",
+      "source-layer": "asprs1",
+      "type": "fill-extrusion"
+    },
+    {
+      "id": "asprs2",
+      "paint": {
+        "fill-extrusion-base": [
+          "get",
+          "height"
+        ],
+        "fill-extrusion-color": [
+          "get",
+          "color"
+        ],
+        "fill-extrusion-height": [
+          "get",
+          "height"
+        ]
+      },
+      "source": "p",
+      "source-layer": "asprs2",
+      "type": "fill-extrusion"
+    }
+  ],
+  "sources": {
+    "p": {
+      "attribution": "出典：静岡県ポイントクラウドデータベース",
+      "maxzoom": 17,
+      "minzoom": 13,
+      "tiles": [
+        "https://optgeo.github.io/nanadaru-4/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "version": 8,
+  "zoom": 17
+}
